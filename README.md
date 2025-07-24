@@ -1,14 +1,33 @@
-### Model Evaluation Summary
+# House Price Prediction (Melbourne)
 
-The project began with a simple Linear Regression model as a baseline. While it achieved a reasonable R² score of 0.67, it struggled with high error values, especially for more expensive homes.
+A machine learning project to predict housing prices in Melbourne using data from Kaggle and a Random Forest regression model. Built in Python with Streamlit for a user-friendly web interface.
 
-To improve performance, a Random Forest Regressor was trained. This model significantly reduced both the MAE and RMSE and increased the R² to 0.76, indicating a better fit to the data. Its ability to capture non-linear relationships and handle feature interactions made it a more robust choice for this dataset.
+##  Features
 
-Based on these metrics, the Random Forest model was selected as the final model for deployment and interpretation.
+- Predict house prices based on user inputs
+- Cleaned and preprocessed real-world housing data
+- Compared Linear Regression and Random Forest models
+- Tuned model using GridSearchCV
+- Deployed as an interactive web app with Streamlit
 
+## Model Performance
 
-| Model                   | MAE       | RMSE      | R² Score |
-|-------------------------|-----------|-----------|----------|
-| Linear Regression       | 239,889   | 1,271,484 | 0.67     |
-| Random Forest           | 192,772   | 307,312   | 0.76     |
-| Random Forest (Tuned)   | 191,711   | 305,005   | 0.76     |
+| Model              | MAE       | RMSE      | R² Score |
+|--------------------|-----------|-----------|----------|
+| Linear Regression  | 239,889   | 1,271,484 | 0.67     |
+| Random Forest      | 192,772   | 307,312   | 0.76     |
+| Tuned RF (Final)   | 191,711   | 305,005   | 0.76     |
+
+## Folder Structure
+
+- `notebooks/` → EDA + modeling
+- `data/` → Melbourne dataset
+- `app.py` → Streamlit interface
+- `model_rf.pkl` → Final trained model
+- `requirements.txt` → Python packages
+
+## Run the App Locally
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
