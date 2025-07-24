@@ -7,7 +7,8 @@ To improve performance, a Random Forest Regressor was trained. This model signif
 Based on these metrics, the Random Forest model was selected as the final model for deployment and interpretation.
 
 
-| Model              | MAE       | RMSE      | R² Score |
-|--------------------|-----------|-----------|----------|
-| Linear Regression  | 239,889   | 1,271,484 | 0.67     |
-| Random Forest      | 192,772   | 307,312   | 0.76     |
+| Model                   | MAE       | RMSE      | R² Score |
+|-------------------------|-----------|-----------|----------|
+| Linear Regression       | 239,889   | 1,271,484 | 0.67     |
+| Random Forest           | 192,772   | 307,312   | 0.76     |
+| Random Forest (Tuned)   | 191,711   | 305,005   | 0.76     |
